@@ -113,3 +113,7 @@ symbols_count_time:
   awl: 2
   wpm: 200
   suffix: "mins."
+
+aplayer:
+  #meting_cdn: https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js
+  meting: true       # MetingJS 支持

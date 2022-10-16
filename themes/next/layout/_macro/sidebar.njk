@@ -13,6 +13,12 @@
     {%- endif %}
 
     <div class="sidebar-inner {% if display_toc %}sidebar-nav-active sidebar-toc-active{% else %}sidebar-overview-active{% endif %}">
+        <!-- require APlayer -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+        <!-- require MetingJS-->
+        <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           {{ __('sidebar.toc') }}
@@ -37,7 +43,6 @@
           {{- next_inject('sidebar') }}
         </div>
       </div>
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=570340213&auto=1&height=66"></iframe>
 
       {%- if theme.back2top.enable and theme.back2top.sidebar %}
         <div class="back-to-top animated" role="button" aria-label="{{ __('accessibility.back_to_top') }}">
@@ -45,6 +50,19 @@
           <span>0%</span>
         </div>
       {%- endif %}
+         <!--网易云-->
+          <meting-js
+            server="netease"
+            id="7178941060"
+            type="playlist"
+            mini="false"
+            fixed="false"
+            list-folded="true"
+            autoplay="true"
+            volume="0.4"
+            theme="#ad7a86"
+            mutex="true">
+          </meting-js>
     </div>
   </aside>
   <div class="sidebar-dimmer"></div>
