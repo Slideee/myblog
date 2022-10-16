@@ -6,7 +6,7 @@ author: Slide
 categories: RocketMQ
 ---
 
-RocketMQ 实现了灵活的多分区和多副本机制，有效的避免了集群内单点故障对于整体服务可用性的影响。存储机制和高可用策略是 RocketMQ 稳定性的核心，社区上关于 RocketMQ 目前存储实现的分析与讨论一直是一个热议的话题。 本文主要对RocketMQ中三个关键的存储文件CommitLog, ConsumeQueue, IndexFile源码的解析，所有源码的的版本为4.9.2。
+RocketMQ 实现了灵活的多分区和多副本机制，有效的避免了集群内单点故障对于整体服务可用性的影响。存储机制和高可用策略是 RocketMQ 稳定性的核心，社区上关于 RocketMQ 目前存储实现的分析与讨论一直是一个热议的话题。本文主要对RocketMQ中三个关键的存储文件CommitLog, ConsumeQueue, IndexFile源码的解析，所有源码的版本为4.9.2。
 
 <!--more-->
 
