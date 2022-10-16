@@ -639,7 +639,7 @@ gitalk:
 # For more information: https://utteranc.es
 utterances:
   enable: true
-  repo: Slideee/nextjs # Github repository owner and name
+  repo: Slideee/myblog # Github repository owner and name
   # Available values: pathname | url | title | og:title
   issue_term: pathname
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
