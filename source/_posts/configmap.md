@@ -1,15 +1,15 @@
 ---
 title: 关于ConfigMap配置更新机制
 date: 2022/10/11
-description: ConfigMap延迟更新机制下的一些解决思路.
 tag: Kubernetes
 author: Slide
 categories: Kubernetes
 ---
 
-## 背景
-
 工作中遇到部分组件，它们依赖的一些配置需要通过ConfigMap挂载到容器内部，但ConfigMap自动更新存在一定延时，这可能会带来一系列的问题。在不能滚动重建的前提下，会存在例如配置刷新不及时等问题，如果本身组件不支持热加载的话，就需要通过一些自定义任务去做这些事。
+
+<!--more-->
+
 ## 原因
 
 ### Kubelet
