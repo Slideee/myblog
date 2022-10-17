@@ -367,7 +367,7 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: a11y-dark
+    light: a11y-light
     dark: a11y-dark
   prism:
     light: prism
@@ -376,7 +376,7 @@ codeblock:
   copy_button:
     enable: true
     # Available values: default | flat | mac
-    style: default
+    style: mac
 
 back2top:
   enable: true

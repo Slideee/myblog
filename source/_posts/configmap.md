@@ -10,9 +10,9 @@ categories: Kubernetes
 
 <!--more-->
 
-## 原因
+## 1. 原因
 
-### Kubelet
+### 1.1 Kubelet
 
 Kubelet在每个Node节点都会安装，负责维护该节点上的所有容器，并监视容器的健康状态。同步容器需要的数据，数据可能来自配置文件，也可能来自Etcd。Kubelet通过启动参数--sync-frequency来控制同步的间隔时间。它的默认值是1min，所以更新ConfigMap的内容后，真正容器中的挂载内容变化可能在`0~1min`之后。
 
@@ -28,13 +28,13 @@ Kubelet在每个Node节点都会安装，负责维护该节点上的所有容器
 TotalDelayTime = kubelet sync-frequency + watch manager delay
 ```
 
-## 解决
+## 2. 解决
 
-### 应用本身监听本地配置文件
+### 2.1 应用本身监听本地配置文件
 
 在RocketMQ中，Acl的更新就通过内核监听配置文件从而实现了热更新。在RocketMQ On K8s中，一种比较常见的做法是，将Acl的配置文件通过ConfigMap挂载，但由于本身ConfigMap的延迟，在用户体验上来说，并不是一种很好的解决方案。更好的做法是通过内核提供的API接口完成Acl配置的更新。
 
-### 使用 Sidecar 来监听本地配置文件变更
+### 2.2 使用 Sidecar 来监听本地配置文件变更
 
 这也是业内比较标准的做法。Prometheus 的 Helm Chart 中使用的就是这种方式。这里有一个很实用的镜像叫做 [configmap-reload](https://github.com/jimmidyson/configmap-reload)，它会去 watch 本地文件的变更，并在发生变更时通过 HTTP 调用通知应用进行热更新。同时Emqx Operator对于插件的加载也使用了这种方式。[emqx-operator](https://github.com/emqx/emqx-operator/blob/main/sidecar/reloader/main.go)
 
