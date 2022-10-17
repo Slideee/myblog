@@ -17,7 +17,7 @@ categories: Kubernetes
 Kubelet在每个Node节点都会安装，负责维护该节点上的所有容器，并监视容器的健康状态。同步容器需要的数据，数据可能来自配置文件，也可能来自Etcd。Kubelet通过启动参数--sync-frequency来控制同步的间隔时间。它的默认值是1min，所以更新ConfigMap的内容后，真正容器中的挂载内容变化可能在`0~1min`之后。
 
 
-![indexFile-2](/images/cm.png)
+![indexFile-2](/images/posts/configmap/cm.png)
 
 
 在K8s的官方文档中，说明了ConfigMap 既可以通过 Watch 操作实现内容传播（默认形式），也可实现基于 TTL 的缓存，还可以直接经过所有请求重定向到 API 服务器。 因此，从 ConfigMap 被更新的那一刻算起，到新的主键被投射到 Pod 中去，这一时间跨度可能与 Kubelet 的同步周期加上高速缓存的传播延迟相等。 这里的传播延迟取决于所选的高速缓存类型，分别对应 Watch 操作的传播延迟、高速缓存的 TTL 时长或者 0。

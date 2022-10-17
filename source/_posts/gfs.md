@@ -35,7 +35,7 @@ GFS 提供了一套类似传统文件系统的 API 接口函数，虽然并不�
 
 ## 2.3 架构
 
-![gfs-arch](/images/gfs-arch.png)
+![gfs-arch](/images/posts/gfs/gfs-arch.png)
 
 一个 GFS 集群包含一个单独的 Master 节点3、多台 Chunk 服务器，并且同时被多个客户端访问。所有的这些机器通常都是普通的 Linux 机器，运行着用户级别(user-level)的服务进程。
 
