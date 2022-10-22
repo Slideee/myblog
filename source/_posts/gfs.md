@@ -274,7 +274,7 @@ Master 节点在例行的垃圾回收过程中移除所有的过期失效副本�
 
 以上。
 
-
+---
 
 最后分享一下《纽约客》为两位谷歌传奇工程师Jeff Dean和 Sanjay Ghemawat（也是GFS的一作）撰写的故事。Jeff Dean 和 Sanjay Ghemawat 是仅有的两位达到 Google Senior Fellow 级别的传奇工程师，而且他们二人还是相交甚厚的好朋友。
 
