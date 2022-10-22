@@ -117,3 +117,9 @@ symbols_count_time:
 aplayer:
   #meting_cdn: https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js
   meting: true       # MetingJS 支持
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
