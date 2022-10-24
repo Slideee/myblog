@@ -5,13 +5,11 @@ date: 2022-10-16 03:48:17
 
 **Hey，我是Slide**
 
-- 🐷 猪厂服务端开发工程师，94年，主攻云原生消息队列。
+- 🐷 猪厂服务端开发工程师，主攻云原生消息队列。
 - 👨‍💻 经历：早年写过业务，后来改写中间件了。日常开发语言为Java、Go、Erlang。
 - 🤔 爱好：猪厂食堂品鉴 | 永劫无间噩梦人机单三 | 健身房散步。
 - 👭 开源：目前为Apache RocketMQ社区贡献代码。
 - 💡 博客：主要用来记录一些日常生活，以及一些工作中的思考。
-- 😺 GitHub：[Slideee](https://github.com/Slideee)  一起交流学习。
-- 💬 微信：HUMBLEz94 欢迎找我内推哈。
 ---
 
-{% instagram https://www.instagram.com/p/B38UF4KHtXd/ %}
+[//]: # ({% instagram https://www.instagram.com/p/B38UF4KHtXd/ %})
