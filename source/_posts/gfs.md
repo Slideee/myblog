@@ -1,6 +1,7 @@
 ---
 title: 关于Google File System（GFS）的一些思考
 date: 2022/10/16
+updated: 2022/10/23
 tag: Paper
 author: Slide
 categories: Paper

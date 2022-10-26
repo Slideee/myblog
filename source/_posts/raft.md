@@ -1,6 +1,7 @@
 ---
 title: 关于Raft一致性算法的一些总结和思考
 date: 2022/10/22
+updated: 2022/10/24
 tag: Paper
 author: Slide
 categories: Paper

@@ -1,6 +1,7 @@
 ---
 title: 关于ConfigMap配置更新机制
 date: 2022/10/11
+updated: 2022/10/17
 tag: Kubernetes
 author: Slide
 categories: Kubernetes

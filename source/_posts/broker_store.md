@@ -1,6 +1,7 @@
 ---
 title: RocketMQ存储机制详解
 date: 2022/10/10
+updated: 2022/10/12
 tag: RocketMQ
 author: Slide
 categories: RocketMQ
