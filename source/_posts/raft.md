@@ -1,5 +1,5 @@
 ---
-title: 关于Raft一致性算法的一些总结和思考
+title: Raft一致性算法
 date: 2022/10/22
 updated: 2022/11/19
 tag: Paper
